@@ -17,6 +17,7 @@ namespace DIPrinciple.ConstructorInjection
         {
             Console.WriteLine("Service starting from client used Property Injection");
             Service.Serv();
+            Console.WriteLine("=======================================================");
         }
     }
 

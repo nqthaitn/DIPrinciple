@@ -1,4 +1,5 @@
 ﻿using System;
+using DIPrinciple.Client;
 using DIPrinciple.ConstructorInjection;
 
 namespace DIPrinciple
@@ -12,8 +13,16 @@ namespace DIPrinciple
         /// <param name="args"></param>
         static void Main(string[] args)
         {
+
             var client = new ClientConstructorInjection(new Service.Service());
             client.Start();
+
+            var clientPropertyInjection = new ClientPropertyInjection();
+            clientPropertyInjection.Service = new Service.Service();
+            clientPropertyInjection.Start();
+
+            var clientMethodInjection = new ClientMethodInjection();
+            clientMethodInjection.Start(new Service.Service());
 
             Console.ReadKey();
             Environment.Exit(0);
