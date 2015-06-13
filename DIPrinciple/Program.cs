@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DIPrinciple.ConstructorInjection;
 
 namespace DIPrinciple
@@ -16,9 +12,11 @@ namespace DIPrinciple
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            var client = new Client(new Service());
+            var client = new ClientConstructorInjection(new Service.Service());
             client.Start();
-            Console.ReadLine();
+
+            Console.ReadKey();
+            Environment.Exit(0);
         }
     }
 }
