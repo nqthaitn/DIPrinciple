@@ -1,10 +1,11 @@
 ﻿using System;
+using DIPrinciple.Service;
 
 namespace DIPrinciple.ConstructorInjection
 {
     public class Client
     {
-        private IService _service;
+        private readonly IService _service;
 
         /// <summary>
         /// Constructor Injection

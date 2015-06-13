@@ -42,13 +42,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConstructorInjection\Client.cs" />
-    <Compile Include="ConstructorInjection\IService.cs" />
+    <Compile Include="Service\IService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ConstructorInjection\Service.cs" />
+    <Compile Include="Service\Service.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MethodInjection\" />
+    <Folder Include="PropertyInjection\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

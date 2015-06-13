@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DIPrinciple.ConstructorInjection
+namespace DIPrinciple.Service
 {
     public class Service: IService
     {

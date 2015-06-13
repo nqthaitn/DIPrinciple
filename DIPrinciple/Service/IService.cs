@@ -1,4 +1,4 @@
-﻿namespace DIPrinciple.ConstructorInjection
+﻿namespace DIPrinciple.Service
 {
     public interface IService
     {
