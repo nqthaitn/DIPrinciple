@@ -8,7 +8,8 @@ namespace DIPrinciple
 {
     class Program
     {
-        //private static IContainer Container { get; set; }
+        //store it for later use.
+        private static IContainer Container { get; set; }
 
         /// <summary>
         /// This code has been written to understand the concept of DI and does not claim the better way to implement DI
@@ -50,13 +51,18 @@ namespace DIPrinciple
             builder.RegisterAssemblyTypes(AppDomain.CurrentDomain.GetAssemblies())
                 .Where(t => t.Name.EndsWith("Service"))
                 .AsImplementedInterfaces();
-            
-            
-            var container = builder.Build();
 
+            
+            //store it for later use.
+            Container = builder.Build();
 
-            var clientConstructor = new ClientConstructorInjection(container.Resolve<IService>());
-            clientConstructor.Start();
+            //avoid memory lead
+            using (var scope = Container.BeginLifetimeScope())
+            {
+                var clientConstructor = new ClientConstructorInjection(scope.Resolve<IService>());
+                clientConstructor.Start();
+            }
+            
 
             Console.ReadKey();
             Environment.Exit(0);
