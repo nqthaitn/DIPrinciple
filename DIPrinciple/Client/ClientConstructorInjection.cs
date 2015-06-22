@@ -1,7 +1,7 @@
 ﻿using System;
 using DIPrinciple.Service;
 
-namespace DIPrinciple.ConstructorInjection
+namespace DIPrinciple.Client
 {
     /// <summary>
     /// Constructor Injection

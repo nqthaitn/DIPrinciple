@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIPrinciple", "DIPrinciple\DIPrinciple.csproj", "{BB9E2990-7A19-4BDA-AC18-E55FE63BDFAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI_API_Principle", "DI_API_Principle\DI_API_Principle.csproj", "{48BD22AF-D70A-4242-9F3B-EB485DFDE16F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI_API_Principle.Service", "DI_API_Principle.Service\DI_API_Principle.Service.csproj", "{C19E78ED-D5FE-4F4A-98C8-796B29FEB4A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{BB9E2990-7A19-4BDA-AC18-E55FE63BDFAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB9E2990-7A19-4BDA-AC18-E55FE63BDFAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB9E2990-7A19-4BDA-AC18-E55FE63BDFAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48BD22AF-D70A-4242-9F3B-EB485DFDE16F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48BD22AF-D70A-4242-9F3B-EB485DFDE16F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48BD22AF-D70A-4242-9F3B-EB485DFDE16F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48BD22AF-D70A-4242-9F3B-EB485DFDE16F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C19E78ED-D5FE-4F4A-98C8-796B29FEB4A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C19E78ED-D5FE-4F4A-98C8-796B29FEB4A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C19E78ED-D5FE-4F4A-98C8-796B29FEB4A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C19E78ED-D5FE-4F4A-98C8-796B29FEB4A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
